@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+@import url('colors.css');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+button {
+    -webkit-tap-highlight-color: transparent !important;
+    outline: none !important;
+    transition: color .13s ease-in-out, background-color .13s ease-in-out;
+}
+
+body {
+    background-color: var(--dark-blue);
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    height: 100vh;
+}
+
+.advice-section {
+    padding: 30px 20px;
+    background-color: var(--dark-grayish-blue);
+    border-radius: 20px;
+    display: grid;
+    gap: 20px;
+    position: relative;
+    margin-bottom: 32px;
+    max-width: 524px;
+}
+
+.advice-section h1 {
+    color: var(--neon-green);
+    font-size: .7rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.advice-section blockquote p {
+    font-size: 24px;
+    color: var(--light-cyan);
+    text-align: center;
+}
+
+.advice-section .button-area {
+    margin-top: 10px;
+}
+
+.advice-section button {
+    width: 64px;
+    height: 64px;
+    background-color: var(--neon-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    position: absolute;
+    bottom: -32px;
+    right: calc(50% - 32px);
+    cursor: pointer;
+    transition: box-shadow .13s ease-in-out;
+}
+
+.advice-section button:hover {
+    box-shadow: 0 0 30px var(--neon-green);
+}
+
+.advice-section button img {
+    height: 24px;
+}
+
+.advice-section .pattern-divider-div {
+    text-align: center;
+}
+
+.attribution {
+    color: var(--light-cyan);
+    margin-top: 40px;
+    text-align: center;
+}
+.attribution a {
+    color: var(--neon-green);
+    text-decoration: none;
+    border-bottom: 2px solid var(--dark-blue);
+    line-height: 1.8;
+    cursor: pointer;
+    transition: border-bottom-color .13s ease-in-out;
+}
+
+.attribution a:hover {
+    border-bottom-color: var(--neon-green);
+}
+
+@media (min-width: 524px) {
+    .advice-section {
+        max-width: 524px;
+        gap: 30px;
+        padding: 40px;
+    }
+}
