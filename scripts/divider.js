@@ -1,5 +1,5 @@
 const dividerImgElem = document.querySelector('#pattern-divider');
-const dividerImagesPath = ['../images/pattern-divider-mobile.svg', '../images/pattern-divider-desktop.svg'];
+const dividerImagesPath = ['images/pattern-divider-mobile.svg', 'images/pattern-divider-desktop.svg'];
 
 window.addEventListener('resize', changePatternDivider);
 
